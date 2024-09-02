@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WanderWeave</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WanderWeave<span>Travel Premio
+
+			</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
+                    <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+                    <li class="nav-item"><a href="visa .html" class="nav-link">visa</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight" style="position: relative; width: 100%; height: 100vh; overflow: hidden; z-index: 1;">
+        <div class="slider" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;">
+            <div class="slide active" style="position: absolute; width: 100%; height: 100%; background-image: url('images/bg_4.jpg'); background-size: cover; background-position: center; opacity: 1; transform: scale(1); transition: opacity 2s ease-in-out, transform 2s ease-in-out;"></div>
+            <div class="slide" style="position: absolute; width: 100%; height: 100%; background-image: url('images/bg_1.jpg'); background-size: cover; background-position: center; opacity: 0; transform: scale(1.1); transition: opacity 2s ease-in-out, transform 2s ease-in-out;"></div>
+            <div class="slide" style="position: absolute; width: 100%; height: 100%; background-image: url('images/T_pic4.jpg'); background-size: cover; background-position: center; opacity: 0; transform: scale(1.1); transition: opacity 2s ease-in-out, transform 2s ease-in-out;"></div>
+        </div>
+        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="row no-gutters slider-text js-fullheight align-items-center">
+                <div class="col-md-9 ftco-animate">
+                    <h1 class="mb-4" style="color: white; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"><br><br><br>
+
+                        <span class="subheading"> Welcome to WanderWeave</span>
+                        <br>Explore the World, One Dream Destination at a Time</h1>
+                    <p class="caps" style="color: white; font-size: 1.5rem; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Travel to any corner of the world, without going around in circles</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = (i === index) ? '1' : '0';
+                slide.style.transform = (i === index) ? 'scale(1)' : 'scale(1.1)';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+
+    <br><br><br><br><br>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="ftco-search d-flex justify-content-center ">
+                        <div class="row ">
+                            <div class="col-md-12 nav-link-wrap ">
+                                <div class="nav nav-pills text-center " id="v-pills-tab " role="tablist " aria-orientation="vertical ">
+                                    <a class="nav-link active mr-md-1 " id="v-pills-1-tab " data-toggle="pill " href="#v-pills-1 " role="tab " aria-controls="v-pills-1 " aria-selected="true ">Search Tour</a>
+
+                                    <a class="nav-link " id="v-pills-2-tab " data-toggle="pill " href="#v-pills-2 " role="tab " aria-controls="v-pills-2 " aria-selected="false ">Hotel</a>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 tab-wrap ">
+
+                                <div class="tab-content " id="v-pills-tabContent ">
+
+                                    <div class="tab-pane fade show active " id="v-pills-1 " role="tabpanel " aria-labelledby="v-pills-nextgen-tab ">
+                                        <form action="# " class="search-property-1 ">
+                                            <div class="row no-gutters ">
+                                                <div class="col-md d-flex ">
+                                                    <div class="form-group p-4 border-0 ">
+                                                        <label for="# ">Destination</label>
+                                                        <div class="form-field ">
+                                                            <div class="icon "><span class="fa fa-search "></span></div>
+                                                            <input type="text " class="form-control " placeholder="Search place ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex ">
+                                                    <div class="form-group p-4 ">
+                                                        <label for="# ">Check-in date</label>
+                                                        <div class="form-field ">
+                                                            <div class="icon "><span class="fa fa-calendar "></span></div>
+                                                            <input type="text " class="form-control checkin_date " placeholder="Check In Date ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex ">
+                                                    <div class="form-group p-4 ">
+                                                        <label for="# ">Check-out date</label>
+                                                        <div class="form-field ">
+                                                            <div class="icon "><span class="fa fa-calendar "></span></div>
+                                                            <input type="text " class="form-control checkout_date " placeholder="Check Out Date ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex ">
+                                                    <div class="form-group p-4 ">
+                                                        <label for="# ">Price Limit</label>
+                                                        <div class="form-field ">
+                                                            <div class="select-wrap ">
+                                                                <div class="icon "><span class="fa fa-chevron-down "></span></div>
+                                                                <select name=" " id=" " class="form-control ">
+																	<option value=" ">$100</option>
+																	<option value=" ">$10,000</option>
+																	<option value=" ">$50,000</option>
+																	<option value=" ">$100,000</option>
+																	<option value=" ">$200,000</option>
+																
+																</select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex ">
+                                                    <div class="form-group d-flex w-100 border-0 ">
+                                                        <div class="form-field w-100 align-items-center d-flex ">
+                                                            <input type="submit " value="Search " class="align-self-stretch form-control btn btn-primary ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="tab-pane fade " id="v-pills-2 " role="tabpanel " aria-labelledby="v-pills-performance-tab ">
+                                        <form action="# " class="search-property-1 ">
+                                            <div class="row no-gutters ">
+                                                <div class="col-lg d-flex ">
+                                                    <div class="form-group p-4 border-0 ">
+                                                        <label for="# ">Destination</label>
+                                                        <div class="form-field ">
+                                                            <div class="icon "><span class="fa fa-search "></span></div>
+                                                            <input type="text " class="form-control " placeholder="Search place ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex ">
+                                                    <div class="form-group p-4 ">
+                                                        <label for="# ">Check-in date</label>
+                                                        <div class="form-field ">
+                                                            <div class="icon "><span class="fa fa-calendar "></span></div>
+                                                            <input type="text " class="form-control checkin_date " placeholder="Check In Date ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex ">
+                                                    <div class="form-group p-4 ">
+                                                        <label for="# ">Check-out date</label>
+                                                        <div class="form-field ">
+                                                            <div class="icon "><span class="fa fa-calendar "></span></div>
+                                                            <input type="text " class="form-control checkout_date " placeholder="Check Out Date ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex ">
+                                                    <div class="form-group p-4 ">
+                                                        <label for="# ">Price Limit</label>
+                                                        <div class="form-field ">
+                                                            <div class="select-wrap ">
+                                                                <div class="icon "><span class="fa fa-chevron-down "></span></div>
+                                                                <select name=" " id=" " class="form-control ">
+																	<option value=" ">$100</option>
+																	<option value=" ">$10,000</option>
+																	<option value=" ">$50,000</option>
+																	<option value=" ">$100,000</option>
+																	<option value=" ">$200,000</option>
+																
+																</select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex ">
+                                                    <div class="form-group d-flex w-100 border-0 ">
+                                                        <div class="form-field w-100 align-items-center d-flex ">
+                                                            <input type="submit " value="Search " class="align-self-stretch form-control btn btn-primary p-0 ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="ftco-section img ftco-select-destination " style="background-image: url(images/bg_3.jpg); ">
+        <div class="container ">
+            <div class="row justify-content-center pb-4 ">
+                <div class="col-md-12 heading-section text-center ftco-animate ">
+                    <span class="subheading ">WanderWeave Provide Places</span>
+                    <h2 class="mb-4 ">Explore Your Destination</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container container-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel-destination owl-carousel ftco-animate">
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(images/maldive.jpg);">
+                                    <div class="text">
+                                        <h3>Maldives</h3>
+                                        <span>4 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(images/T_thailand.jpg);">
+                                    <div class="text">
+                                        <h3>Thailand</h3>
+                                        <span>2 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(images/T_malaysia.jpg);">
+                                    <div class="text">
+                                        <h3>Malaysia</h3>
+                                        <span>5 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(images/Tkorea.jpg);">
+                                    <div class="text">
+                                        <h3>South Korea</h3>
+                                        <span>5 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(images/Tswi.jpg);">
+                                    <div class="text">
+                                        <h3>Switzerland</h3>
+                                        <span>1 Tour</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="ftco-section services-section ">
+        <div class="container ">
+            <div class="row d-flex ">
+                <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center ">
+                    <div class="w-100 ">
+                        <span class="subheading ">Welcome to WanderWeave</span>
+                        <h2 class="mb-4 ">It's time to start your adventure</h2>
+                        <p>In the enchanting world of WanderWeave, a small river named Duden flows gently, nourishing the land with its essential vitality. This serene place is a traveler’s paradise, where every journey is thoughtfully organized, blending
+                            adventure and tranquility.</p>
+
+                        <p>Far beyond the Word Mountains, in the hidden realms of Vokalia and Consonantia, the Blind Texts live quietly by the shores of the Language Ocean. Just as the river Duden sustains its land, WanderWeave enriches every traveler’s
+                            experience with meticulously crafted tours, turning every destination into a story waiting to be told.</p>
+                        <p><a href="destination.html " class="btn btn-primary py-3 px-4 ">Search Destination</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="row ">
+                        <div style="margin-bottom: 7%; margin-left: 30%; "><video id="myVideo " autoplay muted loop>
+                            <source src="images/vedio.mp4 " type="video/mp4 ">
+                            Your browser does not support the video tag.
+                        </video></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ">
+        <div class="container ">
+            <div class="row justify-content-center pb-4 ">
+                <div class="col-md-12 heading-section text-center ftco-animate ">
+                    <span class="subheading ">Destination</span>
+                    <h2 class="mb-4 ">Tour Destination</h2>
+                </div>
+            </div>
+            <div class="row ">
+
+
+
+                <div class="col-md-4 ftco-animate ">
+                    <div class="project-wrap ">
+                        <a href="# " class="img video-background-container ">
+                            <video class="background-video " autoplay muted loop>
+                                <source src="images/london.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="overlay-text ">
+
+                            </div>
+                            <!-- Optional: Add content inside the anchor tag -->
+                        </a>
+
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">8 Days Tour</span>
+                            <h3><a href="#">LONDON</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span> NH Hotels in London </p>
+                            <ul>
+                                <li><span class="flaticon-shower"></span>2</li>
+                                <li><span class="flaticon-king-size"></span>3</li>
+                                <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate ">
+                    <div class="project-wrap ">
+                        <a href="# " class="img video-background-container ">
+                            <video class="background-video " autoplay muted loop>
+                                <source src="images/maldives.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="overlay-text ">
+
+                            </div>
+                            <!-- Optional: Add content inside the anchor tag -->
+                        </a>
+
+                        </a>
+                        <div class="text p-4 ">
+                            <span class="days ">10 Days Tour</span>
+                            <h3><a href="# ">MALDIVES</a></h3>
+                            <p class="location "><span class="fa fa-map-marker "></span> Baros, Maldives.</p>
+                            <ul>
+                                <li><span class="flaticon-shower "></span>2</li>
+                                <li><span class="flaticon-king-size "></span>3</li>
+                                <li><span class="flaticon-sun-umbrella "></span>Near Beach</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate ">
+                    <div class="project-wrap ">
+                        <a href="# " class="img video-background-container ">
+                            <video class="background-video " autoplay muted loop>
+                                <source src="images/Switzerland.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="overlay-text ">
+
+                            </div>
+                            <!-- Optional: Add content inside the anchor tag -->
+                        </a>
+
+                        </a>
+                        <div class="text p-4 ">
+                            <span class="days ">7 Days Tour</span>
+                            <h3><a href="# ">SWITZERLAND</a></h3>
+                            <p class="location "><span class="fa fa-map-marker "></span> the Dolder Grand</p>
+                            <ul>
+                                <li><span class="flaticon-shower "></span>2</li>
+                                <li><span class="flaticon-king-size "></span>3</li>
+                                <li><span class="flaticon-sun-umbrella "></span>Near Beach</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="ftco-section ftco-about img " style="background-image: url(images/bg_4.jpg); ">
+        <div class="overlay "></div>
+        <div class="container py-md-5 ">
+            <div class="row py-md-5 ">
+                <div class="col-md d-flex align-items-center justify-content-center ">
+                    <a href="https://vimeo.com/45830194 " class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4 ">
+                        <span class="fa fa-play "></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <br><br>
+    <section class="ftco-section ftco-about ftco-no-pt img ">
+        <div class="container ">
+            <div class="row d-flex ">
+                <div class="col-md-12 about-intro ">
+                    <div class="row ">
+                        <div class="col-md-6 d-flex align-items-stretch ">
+                            <div class="img d-flex w-100 align-items-center justify-content-center " style="background-image:url(images/T-pic2.jpg); ">
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-5 py-5 ">
+                            <div class="row justify-content-start pb-3 ">
+                                <div class="col-md-12 heading-section ftco-animate ">
+                                    <span class="subheading ">About Us</span>
+                                    <h2 class="mb-4 ">Create Unforgettable and Safe Journeys with WanderWeave.</h2>
+                                    <p>Enjoy!!...Far away, beyond the Word Mountains, far from the lands of Vokalia and Consonantia, the Blind Texts live in seclusion. They reside in Bookmarksgrove, right by the shores of the vast Language Ocean.</p>
+                                    <p><a href="destination.html" class="btn btn-primary ">Book Your Destination</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="ftco-section ftco-about img " style="background-image: url(images/bg_4.jpg); ">
+        <div class="overlay "></div>
+        <div class="container py-md-5 ">
+            <div class="row py-md-5 ">
+                <div class="col-md d-flex align-items-center justify-content-center ">
+                    <a href="https://vimeo.com/45830194 " class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4 ">
+                        <span class="fa fa-play "></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <br><br>
+    <section class="ftco-section special-services-section bg-bottom" style="position: relative; background-image: url(images/Tservice.jpg); background-size: cover; background-position: center;">
+        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                    <span class="subheading">Special Services</span>
+                    <h2 class="mb-4">Our Exclusive Offers</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-services owl-carousel">
+                        <!-- Service Item 1 -->
+                        <div class="item" style="background-image: url('images/Transportation.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 8px; position: relative; color: white;">
+                            <div class="text">
+                                <h3 style="color: white;">Transportation</h3>
+                                <p>We provide luxurious and comfortable transportation for all our tours.</p>
+                            </div>
+                        </div>
+                        <!-- Service Item 2 -->
+                        <div class="item" style="background-image: url('images/Gourmet Meals.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 8px; position: relative; color: white;">
+                            <div class="text">
+                                <h3 style="color: white;">Gourmet Meals</h3>
+                                <p>Enjoy world-class dining experiences on all our trips.</p>
+                            </div>
+                        </div>
+                        <!-- Service Item 3 -->
+                        <div class="item" style="background-image: url('images/Thotel.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 8px; position: relative; color: white;">
+                            <div class="text">
+                                <h3 style="color: white;">Luxury Hotels</h3>
+                                <p>Stay in the most luxurious hotels at your travel destinations.</p>
+                            </div>
+                        </div>
+                        <!-- Service Item 4 -->
+                        <div class="item" style="background-image: url('images/Expert Guides.jpg'); background-size: cover; background-position: center; padding: 20px; border-radius: 8px; position: relative; color: white;">
+                            <div class="text">
+                                <h3 style="color: white;">Expert Guides</h3>
+                                <p>Guides ensure you have an informative and fun experience.</p>
+                            </div>
+                        </div>
+                        <!-- Add more services as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel-services').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+    <!-- 
+    <section class="ftco-section ">
+        <div class="container ">
+            <div class="row justify-content-center pb-4 ">
+                <div class="col-md-12 heading-section text-center ftco-animate ">
+                    <span class="subheading ">Our Blog</span>
+                    <h2 class="mb-4 ">Recent Post</h2>
+                </div>
+            </div>
+            <div class="row d-flex ">
+                <div class="col-md-4 d-flex ftco-animate ">
+                    <div class="blog-entry justify-content-end ">
+                        <a href="blog-single.html " class="block-20 " style="background-image: url( 'images/image_1.jpg'); ">
+                        </a>
+                        <div class="text ">
+                            <div class="d-flex align-items-center mb-4 topp ">
+                                <div class="one ">
+                                    <span class="day ">11</span>
+                                </div>
+                                <div class="two ">
+                                    <span class="yr ">2020</span>
+                                    <span class="mos ">September</span>
+                                </div>
+                            </div>
+                            <h3 class="heading "><a href="# ">Most Popular Place In This World</a></h3>
+                             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+    <!-- <p><a href="# " class="btn btn-primary ">Read more</a></p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 d-flex ftco-animate ">
+        <div class="blog-entry justify-content-end ">
+            <a href="blog-single.html " class="block-20 " style="background-image: url( 'images/image_2.jpg'); ">
+            </a>
+            <div class="text ">
+                <div class="d-flex align-items-center mb-4 topp ">
+                    <div class="one ">
+                        <span class="day ">11</span>
+                    </div>
+                    <div class="two ">
+                        <span class="yr ">2020</span>
+                        <span class="mos ">September</span>
+                    </div>
+                </div>
+                <h3 class="heading "><a href="# ">Most Popular Place In This World</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+    <!-- <p><a href="# " class="btn btn-primary ">Read more</a></p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 d-flex ftco-animate ">
+        <div class="blog-entry ">
+            <a href="blog-single.html " class="block-20 " style="background-image: url( 'images/image_3.jpg'); ">
+            </a>
+            <div class="text ">
+                <div class="d-flex align-items-center mb-4 topp ">
+                    <div class="one ">
+                        <span class="day ">11</span>
+                    </div>
+                    <div class="two ">
+                        <span class="yr ">2020</span>
+                        <span class="mos ">September</span>
+                    </div>
+                </div>
+                <h3 class="heading "><a href="# ">Most Popular Place In This World</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+    <!-- <p><a href="# " class="btn btn-primary ">Read more</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section> -->
+    <br><br><br>
+    <section class="ftco-intro ftco-section ftco-no-pt visa-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <div class="img" style="background-color: white;">
+
+                        <h2 style=" color: #f15d30;">Visa Information</h2>
+                        <p style=" color: #f15d30;">Explore visa requirements for different countries and get ready for your adventure.</p>
+                        <div class="visa-countries">
+                            <div class="country-item">
+                                <img src="images/USA FLAG.jpg" alt="USA Flag">
+                                <h3 style="color: white;">USA</h3>
+                            </div>
+                            <div class="country-item">
+                                <img src="images/UK FLAG.jpg" alt="UK Flag">
+                                <h3 style="color: white;">UK</h3>
+                            </div>
+                            <div class="country-item">
+                                <img src="images/CANADA FLAG.jpg" alt="Canada Flag">
+                                <h3 style="color: white;">Canada</h3>
+                            </div>
+                            <div class="country-item">
+                                <img src="images/AUTRALIA FALG.jpg" alt="Australia Flag">
+                                <h3 style="color: white;">Australia</h3>
+                            </div>
+                            <!-- Add more countries as needed -->
+                        </div><br>
+                        <p class="mb-0"><a href="visa .html" class="btn btn-primary px-4 py-3">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer bg-white ftco-no-pt" style="background-color: #f15d30; border: #f15d30;">
+        <div class="container " style="border:#f15d30;">
+            <div class="row mb-5">
+                <!-- About Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Discover the world with WanderWeave</h2>
+                        <p class="text-white ">Our expertly crafted travel experiences are designed to turn your dream vacation into a reality, offering unforgettable adventures and top-notch service.
+
+                        </p>
+                        <ul class="ftco-footer-social list-unstyled ">
+                            <li><a href="# " class="text-white "><span class="fa fa-twitter "></span></a></li>
+                            <li><a href="# " class="text-white "><span class="fa fa-facebook "></span></a></li>
+                            <li><a href="# " class="text-white "><span class="fa fa-instagram "></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Information Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Information</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="text-white py-2 d-block ">Online Enquiry</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">General Enquiries</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Booking Conditions</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Privacy and Policy</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Refund Policy</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Call Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Experience</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="text-white py-2 d-block ">Adventure</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Hotel and Restaurant</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Beach</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Nature</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Camping</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Party</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Have a Question?</h2>
+                        <div class="block-23 mb-3 ">
+                            <ul class="list-unstyled ">
+                                <li><span class="icon fa fa-map-marker "></span><span class="text text-white ">2karchi, sindhi,pakistan</span></li>
+                                <li><a href="# " class="text-white "><span class="icon fa fa-phone "></span><span class="text ">+92 34678679</span></a></li>
+                                <li><a href="# " class="text-white "><span class="icon fa fa-paper-plane "></span><span class="text ">tasmiya@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+
+        </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader " class="show fullscreen "><svg class="circular " width="48px " height="48px "><circle class="path-bg " cx="24 " cy="24 " r="22 " fill="none " stroke-width="4 " stroke="#eeeeee "/><circle class="path " cx="24 " cy="24 " r="22
+                " fill="none " stroke-width="4 " stroke-miterlimit="10 " stroke="#F96D00 "/></svg></div>
+
+
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery-migrate-3.0.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.easing.1.3.js "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+    <script src="js/jquery.stellar.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/jquery.animateNumber.min.js "></script>
+    <script src="js/bootstrap-datepicker.js "></script>
+    <script src="js/scrollax.min.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false "></script>
+    <script src="js/google-map.js "></script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>

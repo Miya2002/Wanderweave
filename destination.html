@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WanderWeave</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WanderWeave<span>Travel Premio</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="oi oi-menu"></span> Menu
+   </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item active"><a href="destination.html" class="nav-link">Destination</a></li>
+                    <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/destinationmain.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+
+                    <h1 class="mb-0 bread">DREAM PLACES</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-wrap-1 ftco-animate">
+                        <form action="#" class="search-property-1">
+                            <div class="row no-gutters">
+                                <div class="col-lg d-flex">
+                                    <div class="form-group p-4 border-0">
+                                        <label for="#">Destination</label>
+                                        <div class="form-field">
+                                            <div class="icon"><span class="fa fa-search"></span></div>
+                                            <input type="text" class="form-control" placeholder="Search place">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg d-flex">
+                                    <div class="form-group p-4">
+                                        <label for="#">Check-in date</label>
+                                        <div class="form-field">
+                                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                                            <input type="text" class="form-control checkin_date" placeholder="Check In Date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg d-flex">
+                                    <div class="form-group p-4">
+                                        <label for="#">Check-out date</label>
+                                        <div class="form-field">
+                                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                                            <input type="text" class="form-control checkout_date" placeholder="Check Out Date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg d-flex">
+                                    <div class="form-group p-4">
+                                        <label for="#">Price Limit</label>
+                                        <div class="form-field">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                                <select name="" id="" class="form-control">
+                  <option value="">$5,000</option>
+                  <option value="">$10,000</option>
+                  <option value="">$50,000</option>
+                  <option value="">$100,000</option>
+                  <option value="">$200,000</option>
+                  <option value="">$300,000</option>
+                  <option value="">$400,000</option>
+                  <option value="">$500,000</option>
+                  <option value="">$600,000</option>
+                  <option value="">$700,000</option>
+                  <option value="">$800,000</option>
+                  <option value="">$900,000</option>
+                  <option value="">$1,000,000</option>
+                  <option value="">$2,000,000</option>
+              </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg d-flex">
+                                    <div class="form-group d-flex w-100 border-0">
+                                        <div class="form-field w-100 align-items-center d-flex">
+                                            <input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <!-- ---------cards wala section -->
+    <div class="container ">
+        <div class="row justify-content-center pb-4 ">
+            <div class="col-md-12 heading-section text-center ftco-animate ">
+                <span class="subheading ">Explore Destinations</span>
+
+            </div>
+        </div>
+        <section class="ftco-section destinations-section bg-bottom" style="background-image: url('images/countries1.jpg');">
+            <div class="container">
+                <div class="row justify-content-center pb-4">
+                    <div class="col-md-12 text-center heading-section heading-section-white ftco-animate">
+
+                        <h2 class="mb-4">Choose Your Country</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="country-names">
+                            <span class="country-name" data-country="france">France</span>
+                            <span class="country-name" data-country="italy">Italy</span>
+                            <span class="country-name" data-country="japan">Japan</span>
+                            <span class="country-name" data-country="australia">Australia</span>
+                            <span class="country-name" data-country="brazil">Brazil</span>
+                            <span class="country-name" data-country="egypt">Egypt</span>
+                            <span class="country-name" data-country="canada">Canada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row city-cards">
+                    <!-- France -->
+                    <div class="col-md-4 city-card" data-country="france">
+                        <div class="card" style="background-image: url('images/f1.jpg');">
+                            <div class="text">
+                                <h3>Marseille</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="france">
+                        <div class="card" style="background-image: url('images/f2.jpg');">
+                            <div class="text">
+                                <h3>Lyon</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="france">
+                        <div class="card" style="background-image: url('images/f3.jpg');">
+                            <div class="text">
+                                <h3>Nice</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Italy -->
+                    <div class="col-md-4 city-card" data-country="italy">
+                        <div class="card" style="background-image: url('images/i1.jpg');">
+                            <div class="text">
+                                <h3>Rome</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="italy">
+                        <div class="card" style="background-image: url('images/i2.jpg');">
+                            <div class="text">
+                                <h3>Naples</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="italy">
+                        <div class="card" style="background-image: url('images/i3.jpg');">
+                            <div class="text">
+                                <h3>Milan</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Japan -->
+                    <div class="col-md-4 city-card" data-country="japan">
+                        <div class="card" style="background-image: url('images/j1.jpg');">
+                            <div class="text">
+                                <h3>Yokohama</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="japan">
+                        <div class="card" style="background-image: url('images/j2.jpg');">
+                            <div class="text">
+                                <h3>Nagoya</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="japan">
+                        <div class="card" style="background-image: url('images/j3.jpg');">
+                            <div class="text">
+                                <h3>Osaka</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Australia -->
+                    <div class="col-md-4 city-card" data-country="australia">
+                        <div class="card" style="background-image: url('images/a1.jpg');">
+                            <div class="text">
+                                <h3>Melbourne VIC</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="australia">
+                        <div class="card" style="background-image: url('images/a2.jpg');">
+                            <div class="text">
+                                <h3>Sydney NSW</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="australia">
+                        <div class="card" style="background-image: url('images/a3.jpg');">
+                            <div class="text">
+                                <h3>Brisbane</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brazil -->
+                    <div class="col-md-4 city-card" data-country="brazil">
+                        <div class="card" style="background-image: url('images/b1.jpg');">
+                            <div class="text">
+                                <h3>São Paulo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="brazil">
+                        <div class="card" style="background-image: url('images/b2.jpg');">
+                            <div class="text">
+                                <h3>Rio de Janeiro</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="brazil">
+                        <div class="card" style="background-image: url('images/b3.jpg');">
+                            <div class="text">
+                                <h3>Brasília</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Egypt -->
+                    <div class="col-md-4 city-card" data-country="egypt">
+                        <div class="card" style="background-image: url('images/e1.jpg');">
+                            <div class="text">
+                                <h3>Cairo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="egypt">
+                        <div class="card" style="background-image: url('images/e2.jpg');">
+                            <div class="text">
+                                <h3>Alexandria</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="egypt">
+                        <div class="card" style="background-image: url('images/e3.jpg');">
+                            <div class="text">
+                                <h3>Giza</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Canada -->
+                    <div class="col-md-4 city-card" data-country="canada">
+                        <div class="card" style="background-image: url('images/c1.jpg');">
+                            <div class="text">
+                                <h3>Calgary</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="canada">
+                        <div class="card" style="background-image: url('images/c2.jpg');">
+                            <div class="text">
+                                <h3>Montreal</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 city-card" data-country="canada">
+                        <div class="card" style="background-image: url('images/c3.jpg');">
+                            <div class="text">
+                                <h3>Toronto</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const backgroundImages = {
+                    france: 'images/destination-5.jpg',
+                    italy: 'images/destination-4.jpg',
+                    japan: 'images/destination-6.jpg',
+                    australia: 'images/destination-3.jpg',
+                    brazil: 'images/Tservice.jpg',
+                    egypt: 'images/b2.jpg',
+                    canada: 'images/hotel-resto-9.jpg'
+                };
+
+                document.querySelectorAll('.country-name').forEach(function(country) {
+                    country.addEventListener('click', function() {
+                        const selectedCountry = this.getAttribute('data-country');
+
+                        // Change the background image based on the selected country
+                        const newBackgroundImage = backgroundImages[selectedCountry];
+                        document.querySelector('.destinations-section').style.backgroundImage = `url('${newBackgroundImage}')`;
+
+                        // Show the city cards for the selected country
+                        document.querySelectorAll('.city-card').forEach(function(card) {
+                            if (card.getAttribute('data-country') === selectedCountry) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+
+
+        <!-- -----------end---------------- -->
+        <br><br>
+        <div class="container ">
+            <div class="row justify-content-center pb-4 ">
+                <div class="col-md-12 heading-section text-center ftco-animate ">
+                    <span class="subheading ">Book Your Deals</span>
+
+                </div>
+            </div>
+            <section class="ftco-section special-deals-section">
+                <div class="container">
+
+                    <div class="row">
+                        <!-- Deal Item 1 -->
+                        <div class="col-md-4 ftco-animate">
+                            <div class="deal-wrap">
+                                <a href="#" class="img" style="background-image: url(images/j2.jpg);">
+                                    <span class="price">Special Deal</span>
+                                </a>
+                                <div class="text p-4">
+                                    <span class="price">Family Deal</span><br>
+
+                                    <h3><a href="#">JAPAN</a></h3>
+
+                                    <ul>
+                                        <li><span class="days">8 Days Tour</span></li>
+                                        <li>
+                                            <button style="
+                                          background-color: #f15d30; 
+                                          color: white; 
+                                          border: none; 
+                                          border-radius: 4px; 
+                                          padding: 8px 16px; 
+                                          font-size: 0.875rem; 
+                                          font-weight: bold; 
+                                          cursor: pointer; 
+                                          transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+                                          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+                                          position: relative; 
+                                          margin-left: 70%;                                          overflow: hidden; 
+                                          outline: none;
+                                      " onmouseover="this.style.backgroundColor='#e03d24'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 10px rgba(0, 0, 0, 0.3)';" onmouseout="this.style.backgroundColor='#f15d30'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.2)';">
+                                          BookNow
+                                      </button>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal Item 2 -->
+                        <div class="col-md-4 ftco-animate">
+                            <div class="deal-wrap">
+                                <a href="#" class="img" style="background-image: url(images/i2.jpg);">
+                                    <span class="price">Special Deal</span>
+                                </a>
+                                <div class="text p-4">
+                                    <span class="price">Family Deal</span><br>
+
+                                    <h3><a href="#">ITALY</a></h3>
+
+                                    <ul>
+                                        <li><span class="days">8 Days Tour</span></li>
+                                        <li>
+                                            <button style="
+                                        background-color: #f15d30; 
+                                        color: white; 
+                                        border: none; 
+                                        border-radius: 4px; 
+                                        padding: 8px 16px; 
+                                        font-size: 0.875rem; 
+                                        font-weight: bold; 
+                                        cursor: pointer; 
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+                                        position: relative; 
+                                        margin-left: 70%;                                          overflow: hidden; 
+                                        outline: none;
+                                    " onmouseover="this.style.backgroundColor='#e03d24'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 10px rgba(0, 0, 0, 0.3)';" onmouseout="this.style.backgroundColor='#f15d30'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.2)';">
+                                        BookNow
+                                    </button>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal Item 2 -->
+                        <div class="col-md-4 ftco-animate">
+                            <div class="deal-wrap">
+                                <a href="#" class="img" style="background-image: url(images/a2.jpg);">
+                                    <span class="price">Special Deal</span>
+                                </a>
+                                <div class="text p-4">
+                                    <span class="price">Family Deal</span><br>
+
+                                    <h3><a href="#">AUSTRALIA</a></h3>
+
+                                    <ul>
+                                        <li><span class="days">8 Days Tour</span></li>
+                                        <li>
+                                            <button style="
+                                        background-color: #f15d30; 
+                                        color: white; 
+                                        border: none; 
+                                        border-radius: 4px; 
+                                        padding: 8px 16px; 
+                                        font-size: 0.875rem; 
+                                        font-weight: bold; 
+                                        cursor: pointer; 
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+                                        position: relative; 
+                                        margin-left: 70%;                                          overflow: hidden; 
+                                        outline: none;
+                                    " onmouseover="this.style.backgroundColor='#e03d24'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 10px rgba(0, 0, 0, 0.3)';" onmouseout="this.style.backgroundColor='#f15d30'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.2)';">
+                                        BookNow
+                                    </button>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal Item 2 -->
+
+                        <!-- Repeat for other items with different images and details -->
+                    </div>
+
+                </div><br>
+                <div class="container">
+                    <div class="row">
+                        <!-- Deal Item 1 -->
+                        <div class="col-md-4 ftco-animate">
+                            <div class="deal-wrap">
+                                <a href="#" class="img" style="background-image: url(images/c1.jpg);">
+                                    <span class="price">Special Deal</span>
+                                </a>
+                                <div class="text p-4">
+                                    <span class="price">Family Deal</span><br>
+
+                                    <h3><a href="#">CANADA</a></h3>
+
+                                    <ul>
+                                        <li><span class="days">8 Days Tour</span></li>
+                                        <li>
+                                            <button style="
+                                        background-color: #f15d30; 
+                                        color: white; 
+                                        border: none; 
+                                        border-radius: 4px; 
+                                        padding: 8px 16px; 
+                                        font-size: 0.875rem; 
+                                        font-weight: bold; 
+                                        cursor: pointer; 
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+                                        position: relative; 
+                                        margin-left: 70%;                                          overflow: hidden; 
+                                        outline: none;
+                                    " onmouseover="this.style.backgroundColor='#e03d24'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 10px rgba(0, 0, 0, 0.3)';" onmouseout="this.style.backgroundColor='#f15d30'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.2)';">
+                                        BookNow
+                                    </button>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal Item 2 -->
+                        <div class="col-md-4 ftco-animate">
+                            <div class="deal-wrap">
+                                <a href="#" class="img" style="background-image: url(images/e2.jpg);">
+                                    <span class="price">Special Deal</span>
+                                </a>
+                                <div class="text p-4">
+                                    <span class="price">Family Deal</span><br>
+
+                                    <h3><a href="#">EGYPT</a></h3>
+
+                                    <ul>
+                                        <li><span class="days">8 Days Tour</span></li>
+                                        <li>
+                                            <button style="
+                                        background-color: #f15d30; 
+                                        color: white; 
+                                        border: none; 
+                                        border-radius: 4px; 
+                                        padding: 8px 16px; 
+                                        font-size: 0.875rem; 
+                                        font-weight: bold; 
+                                        cursor: pointer; 
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+                                        position: relative; 
+                                        margin-left: 70%;                                          overflow: hidden; 
+                                        outline: none;
+                                    " onmouseover="this.style.backgroundColor='#e03d24'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 10px rgba(0, 0, 0, 0.3)';" onmouseout="this.style.backgroundColor='#f15d30'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.2)';">
+                                        BookNow
+                                    </button>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal Item 2 -->
+                        <div class="col-md-4 ftco-animate">
+                            <div class="deal-wrap">
+                                <a href="#" class="img" style="background-image: url(images/maldive.jpg);">
+                                    <span class="price">Special Deal</span>
+                                </a>
+                                <div class="text p-4">
+                                    <span class="price">Family Deal</span><br>
+
+                                    <h3><a href="#">MALDIVES</a></h3>
+
+                                    <ul>
+                                        <li><span class="days">8 Days Tour</span></li>
+                                        <li>
+                                            <button style="
+                                        background-color: #f15d30; 
+                                        color: white; 
+                                        border: none; 
+                                        border-radius: 4px; 
+                                        padding: 8px 16px; 
+                                        font-size: 0.875rem; 
+                                        font-weight: bold; 
+                                        cursor: pointer; 
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+                                        position: relative; 
+                                        margin-left: 70%;                                          overflow: hidden; 
+                                        outline: none;
+                                    " onmouseover="this.style.backgroundColor='#e03d24'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 10px rgba(0, 0, 0, 0.3)';" onmouseout="this.style.backgroundColor='#f15d30'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.2)';">
+                                        BookNow
+                                    </button>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal Item 2 -->
+
+                        <!-- Repeat for other items with different images and details -->
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col text-center">
+                            <div class="pagination" style="justify-content: center;">
+                                <ul>
+                                    <li><a href="#">&lt;</a></li>
+                                    <li class="active"><span>1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">&gt;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+        </div>
+    </div>
+    <footer class="ftco-footer bg-white ftco-no-pt" style="background-color: #f15d30; border: #f15d30;">
+        <div class="container " style="border:#f15d30;">
+            <div class="row mb-5">
+                <!-- About Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Discover the world with WanderWeave</h2>
+                        <p class="text-white ">Our expertly crafted travel experiences are designed to turn your dream vacation into a reality, offering unforgettable adventures and top-notch service.
+
+                        </p>
+                        <ul class="ftco-footer-social list-unstyled ">
+                            <li><a href="# " class="text-white "><span class="fa fa-twitter "></span></a></li>
+                            <li><a href="# " class="text-white "><span class="fa fa-facebook "></span></a></li>
+                            <li><a href="# " class="text-white "><span class="fa fa-instagram "></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Information Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Information</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="text-white py-2 d-block ">Online Enquiry</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">General Enquiries</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Booking Conditions</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Privacy and Policy</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Refund Policy</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Call Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Experience</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="# " class="text-white py-2 d-block ">Adventure</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Hotel and Restaurant</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Beach</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Nature</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Camping</a></li>
+                            <li><a href="# " class="text-white py-2 d-block ">Party</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-md-3 pt-5 text-center text-md-left ">
+                    <div class="ftco-footer-widget mb-4 ">
+                        <h2 class="ftco-heading-2 text-white ">Have a Question?</h2>
+                        <div class="block-23 mb-3 ">
+                            <ul class="list-unstyled ">
+                                <li><span class="icon fa fa-map-marker "></span><span class="text text-white ">2karchi, sindhi,pakistan</span></li>
+                                <li><a href="# " class="text-white "><span class="icon fa fa-phone "></span><span class="text ">+92 34678679</span></a></li>
+                                <li><a href="# " class="text-white "><span class="icon fa fa-paper-plane "></span><span class="text ">tasmiya@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+
+        </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader " class="show fullscreen "><svg class="circular " width="48px " height="48px "><circle class="path-bg " cx="24 " cy="24 " r="22 " fill="none " stroke-width="4 " stroke="#eeeeee "/><circle class="path " cx="24 " cy="24 " r="22
+                      " fill="none " stroke-width="4 " stroke-miterlimit="10 " stroke="#F96D00 "/></svg></div>
+
+
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery-migrate-3.0.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.easing.1.3.js "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+    <script src="js/jquery.stellar.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/jquery.animateNumber.min.js "></script>
+    <script src="js/bootstrap-datepicker.js "></script>
+    <script src="js/scrollax.min.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false "></script>
+    <script src="js/google-map.js "></script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>
